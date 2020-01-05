@@ -45,7 +45,7 @@ class _CameraState extends State<Camera> {
     bloc.cameras.listen((data) {
       bloc.controllCamera = CameraController(
         data[0],
-        ResolutionPreset.high,
+        ResolutionPreset.veryHigh,
       );
       bloc.cameraOn.sink.add(0);
       bloc.controllCamera.initialize().then((_) {
